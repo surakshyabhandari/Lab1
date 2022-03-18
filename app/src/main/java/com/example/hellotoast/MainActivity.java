@@ -20,9 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void showToast(View view) {
         Context context = getApplicationContext();
+        //setting the text to be shown
         CharSequence text = "Hello Toast!";
+        //duration the text will be showing i.e 2sec
         int duration = Toast.LENGTH_SHORT;
+        //making toast to display the message for certain amount of time
         Toast toast = Toast.makeText(context, text, duration);
+        //calling toast by show() method
         toast.show();
     }
 
